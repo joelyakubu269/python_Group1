@@ -6,5 +6,7 @@ def receipt_formatter(name,quantity,price):
     subtotal = quantity * price
     tax = 7.5/100 * subtotal
     total = subtotal + tax
-    return f"customer - {name} ,subtotal .{subtotal}, Tax {tax}, total {total}"
-print(receipt_formatter("joel",100,20))
+    return f"""Customer: {name}
+    Subtotal: {subtotal: .2f}
+    Tax: {tax: .2f}
+    Total: {total: .2f}"""
