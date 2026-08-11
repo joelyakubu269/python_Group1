@@ -10,3 +10,4 @@ def receipt_formatter(name,quantity,price):
     Subtotal: {subtotal: .2f}
     Tax: {tax: .2f}
     Total: {total: .2f}"""
+print(receipt_formatter("Joel",100,20))
